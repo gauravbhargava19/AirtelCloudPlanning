@@ -6,12 +6,60 @@ package com.myspace.airtelcloudplanning;
 
 public class orderDetails implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public orderDetails() {
-    }
+	@org.kie.api.definition.type.Label(value = "Service Name")
+	private java.util.List<java.lang.String> serviceName;
+	@org.kie.api.definition.type.Label(value = "Flavour")
+	private java.util.List<java.lang.String> flavour;
+	@org.kie.api.definition.type.Label(value = "Data Center Location")
+	private java.util.List<java.lang.String> dataCenterLoc;
+	@org.kie.api.definition.type.Label(value = "Site Capacity")
+	private java.util.List<java.lang.String> siteCapacity;
 
+	public orderDetails() {
+	}
 
+	public java.util.List<java.lang.String> getServiceName() {
+		return this.serviceName;
+	}
 
+	public void setServiceName(java.util.List<java.lang.String> serviceName) {
+		this.serviceName = serviceName;
+	}
+
+	public java.util.List<java.lang.String> getFlavour() {
+		return this.flavour;
+	}
+
+	public void setFlavour(java.util.List<java.lang.String> flavour) {
+		this.flavour = flavour;
+	}
+
+	public java.util.List<java.lang.String> getDataCenterLoc() {
+		return this.dataCenterLoc;
+	}
+
+	public void setDataCenterLoc(java.util.List<java.lang.String> dataCenterLoc) {
+		this.dataCenterLoc = dataCenterLoc;
+	}
+
+	public java.util.List<java.lang.String> getSiteCapacity() {
+		return this.siteCapacity;
+	}
+
+	public void setSiteCapacity(java.util.List<java.lang.String> siteCapacity) {
+		this.siteCapacity = siteCapacity;
+	}
+
+	public orderDetails(java.util.List<java.lang.String> serviceName,
+			java.util.List<java.lang.String> flavour,
+			java.util.List<java.lang.String> dataCenterLoc,
+			java.util.List<java.lang.String> siteCapacity) {
+		this.serviceName = serviceName;
+		this.flavour = flavour;
+		this.dataCenterLoc = dataCenterLoc;
+		this.siteCapacity = siteCapacity;
+	}
 
 }
